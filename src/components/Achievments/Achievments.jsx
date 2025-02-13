@@ -11,11 +11,11 @@ import F2 from '../../assets/F2.png'
 
 const  Achievments = () => {
   return (
-    <div className="flex items-center justify-between bg-[#005B8C] px-36 py-24 gap-12 ">
+    <div className="flex items-center justify-between bg-[#005B8C] px-24 py-24 gap-12 ">
 
-        <div className="w-1/3 flex flex-col justify-center ml-24">
-          <h3 className="font-semibold text-2xl text-white">Client Testimonials</h3>
-          <h1 className="font-bold text-4xl text-white">Our Achievments</h1>
+        <div className="w-2/5 flex flex-col justify-center ml-24">
+          <h3 className="font-semibold text-xl text-white">Client Testimonials</h3>
+          <h1 className="font-bold text-3xl text-white">Our Achievments</h1>
           <div>
             <AchievmentsCards
               img={E1}
@@ -40,8 +40,8 @@ const  Achievments = () => {
           </div>
         </div>
 
-        <div className="flex flex-col justify-start w-1/2 gap-12">
-          <p className="text-xl text-white">hear directly from our valued clients who have experienced the difference we bring. Their feedback speaks volumes about our commitment to quality, service, and results.</p>
+        <div className="flex flex-col justify-start w-3/5 gap-12">
+          <p className="text-lg text-white">hear directly from our valued clients who have experienced the difference we bring. Their feedback speaks volumes about our commitment to quality, service, and results.</p>
           <div className="flex gap-5 h-auto">
             <ClientCard
               img={F1}
