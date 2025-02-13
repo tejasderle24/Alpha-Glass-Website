@@ -37,7 +37,7 @@ function Header() {
                     <li>Application</li>
                     <li>Contact</li>
                 </ul>
-                <button className='bg-[#005B8C] p-3 text-white rounded'>
+                <button className='bg-[#005B8C] px-8 py-4 text-white'>
                     Request A Quote
                 </button>
             </div>
