@@ -4,18 +4,18 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faClock } from '@fortawesome/free-regular-svg-icons';
 import { faLocationDot, faPhoneVolume } from '@fortawesome/free-solid-svg-icons';
 
-
 function Header() {
     return (
-        <div className='flex justify-between items-center pr-4'>
+        <div className="flex flex-wrap justify-between items-center px-4 py-2">
             {/* Logo Section */}
-            <div className="flex items-center">
+            <div className="flex items-center w-full sm:w-auto justify-between mb-4 sm:mb-0">
                 <img src={Logo} alt="Logo" className="h-24" />
             </div>
 
             {/* Contact & Business Details Section */}
-            <div className="flex flex-col items-start">
-                <ul className="flex gap-8 text-sm mb-2">
+            <div className="flex flex-col items-start w-full sm:w-auto">
+                {/* Contact details for small screens */}
+                <ul className="flex flex-wrap gap-4 text-sm mb-4 sm:mb-0">
                     <li className="flex items-center gap-2">
                         <FontAwesomeIcon icon={faClock} className='text-[#005B8C]' />
                         Mon - Sat : 8AM - 5PM, Sunday: CLOSED
@@ -29,18 +29,10 @@ function Header() {
                         Nashik, Maharashtra, India
                     </li>
                 </ul>
-                <div className="flex gap-7 items-center">
-                    {/* <ul className='flex gap-6 text-sm'>
-                    <li>Home</li>
-                    <li>About Us</li>
-                    <li>Infrastructure</li>
-                    <li>Products</li>
-                    <li>Application</li>
-                    <li>Contact</li>
-                </ul> */}
 
-                    <ul className='flex gap-6 text-sm'>
-                        
+                {/* Navigation and Request a Quote button */}
+                <div className="flex flex-wrap gap-6 items-center justify-between w-full sm:w-auto">
+                    <ul className="flex gap-6 text-sm">
                         <li><a href="/">Home</a></li>
                         <li><a href="/aboutus">About Us</a></li>
                         <li><a href="/infrastructure">Infrastructure</a></li>
