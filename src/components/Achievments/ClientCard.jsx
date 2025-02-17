@@ -2,7 +2,7 @@ import React from 'react'
 
 const ClientCard = ({ img, name, post, desc, rate }) => {
   return (
-    <div className='bg-gray-100 p-10 flex flex-col w-xl'>
+    <div className='bg-gray-100 p-10 flex flex-col w-full sm:w-auto'>
       {/* Header Section */}
       <div className="flex items-center mb-4">
         <img src={img} alt={name} className="w-12 h-12 rounded-full mr-4" />
@@ -14,9 +14,7 @@ const ClientCard = ({ img, name, post, desc, rate }) => {
 
       {/* Description Section */}
       <div className="mb-4">
-        <p className="text-[#757575] font-normal text-base">
-          {desc}
-        </p>
+        <p className="text-[#757575] font-normal text-base break-words">{desc}</p>
       </div>
 
       {/* Rating Section */}
