@@ -30,21 +30,6 @@ function ProductCard() {
             img: G3,
             title: "Bend Glass",
             desc: "Bend glass is a curved or shaped glass formed by heating it until pliable and molding it into desired contours, and design."
-        },
-        {
-            img: G1,
-            title: "Laminated Glass",
-            desc: "Laminated glass is a safety glass made by bonding layers of glass with a plastic interlayer, offering durability and shatter resistance."
-        },
-        {
-            img: G2,
-            title: "Tempered Glass",
-            desc: "Tempered glass is a type of safety glass that's heat-treated to be stronger and shatter into small, less harmful pieces when broken."
-        },
-        {
-            img: G3,
-            title: "Bend Glass",
-            desc: "Bend glass is a curved or shaped glass formed by heating it until pliable and molding it into desired contours, and design."
         }
     ];
 
@@ -57,7 +42,7 @@ function ProductCard() {
                         {
                             breakpoint: 1024, // Tablet and desktop view
                             settings: {
-                                slidesToShow: 3,
+                                slidesToShow: 1,
                                 slidesToScroll: 1
                             }
                         },
@@ -72,11 +57,11 @@ function ProductCard() {
                 >
                     {
                         data.map((d, index) => (
-                            <div key={index} className="p-6">
-                                <div className="max-w-sm h-auto rounded overflow-hidden shadow-lg bg-white">
-                                    <img className="w-full h-48 object-cover" src={d.img} alt={d.title} />
+                            <div key={index} className="p-0 md:p-6 w-full md:w-auto">
+                                <div className="bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:border-2 hover:border-black">
+                                    <img className="w-full aspect-video object-cover rounded-t-lg" src={d.img} alt={d.title} />
                                     <div className="px-6 py-4">
-                                        <h1 className="text-[#3C3C3C] font-bold text-xl mb-2 ">{d.title}</h1>
+                                        <h1 className="text-[#3C3C3C] text-xl font-semibold mt-7 mb-4 ">{d.title}</h1>
                                         <p className="text-[#3D3737] text-base p-4">
                                             {d.desc}
                                         </p>

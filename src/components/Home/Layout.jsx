@@ -151,7 +151,7 @@ function Layout() {
       </div>
 
       {/* Selection 5 */}
-      <div className="px-36 py-8 leading-tight">
+      <div className="md:px-36 py-8 px-4 leading-tight">
         <h2 className="text-base font-semibold text-[#005B8C]">Check Our Products</h2>
         <h3 className="text-4xl font-bold text-[#3D3737] mb-12">We Provide Quality Products</h3>
         <div className='bg-gray-100'>
